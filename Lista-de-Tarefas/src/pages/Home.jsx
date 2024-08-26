@@ -1,7 +1,8 @@
+import './Home.css'
 import FormLogin from "../components/FormLogin"
 const Home = () => {
   return (
-    <div>
+    <div className='container'>
         <FormLogin />
     </div>
   )

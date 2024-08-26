@@ -1,0 +1,32 @@
+.container form {
+    border: 1px solid #ccc; /* Borda externa suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo do formulário */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 
+                -2px -2px 5px rgba(255, 255, 255, 0.5); /* Sombra para efeito 3D */
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: auto; /* Centraliza o formulário */
+}
+
+/* Estilizando os campos de input para combinar com o efeito */
+.container form input {
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno do input */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    width: calc(100% - 24px); /* Ajusta a largura do input para o padding */
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1), 
+                inset -1px -1px 2px rgba(255, 255, 255, 0.7); /* Sombra interna para efeito 3D */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+  
