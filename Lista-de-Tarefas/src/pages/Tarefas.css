@@ -1,0 +1,36 @@
+.tarefas-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1), -3px -3px 6px rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.tarefas-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarefas-container form input,
+.tarefas-container form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80%; /* Ajustado para centralizar os inputs */
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1),
+                inset -1px -1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.tarefas-output {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+    text-align: center;
+}

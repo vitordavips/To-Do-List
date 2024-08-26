@@ -1,14 +1,18 @@
 import './FormLogin.css'
 import { useState } from "react"
+import { Link } from 'react-router-dom';
+
 
 const FormLogin = () => {
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Eviando o formulário");
-        console.log( email, password)
+        console.log("Email:", email);
+        console.log("password:", password);
+       
     
         // limpar form
         setEmail("");
@@ -40,7 +44,8 @@ const FormLogin = () => {
                     value={password}
                 />
             </div>
-            <input type="submit" value="Enviar" />
+            <Link to={"/tarefas"}><input type="submit" value="Enviar" /></Link>
+            
        </form>
     </div>
   )
