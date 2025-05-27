@@ -29,6 +29,8 @@ const TaksForm = ({btnText, taskList, setTaksList}: Props) => {
 
         setTitle("");
         setDifficulty(0);
+
+        console.log(taskList)
     };
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -42,11 +44,23 @@ const TaksForm = ({btnText, taskList, setTaksList}: Props) => {
     return <form onSubmit={addTaskHandler} className={styles.form}>
         <div className={styles.input_container}>
             <label htmlFor="title">Título</label>
-            <input type="text" name='title' placeholder='Título da Tarefa' onChange={handleChange}/>
+            <input 
+                type="text" 
+                name='title' 
+                placeholder='Título da Tarefa' 
+                onChange={handleChange}
+                value={title}
+            />
         </div>
         <div className={styles.input_container}>
             <label htmlFor="difficulty">Dificuldade: </label>
-            <input type="text" name='difficulty' placeholder='Dificuldade da Tarefa' onChange={handleChange}/>
+            <input 
+                type="text" 
+                name='difficulty' 
+                placeholder='Dificuldade da Tarefa' 
+                onChange={handleChange}
+                value={difficulty}
+            />
         </div>
         <input type="submit" value={btnText}/>
     </form>
