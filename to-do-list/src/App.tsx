@@ -17,6 +17,14 @@ import type { ITaks } from "./interfaces/Taks";
 function App() {
   const [taksList, setTaksList] = useState< ITaks[]>([]);
 
+  const deleteTask = (id: number) => {
+    setTaksList(
+      taksList.filter((task) => {
+        return task.id !== id;
+      })
+    );
+  };
+
   return (
     <div>
       <Header/>
@@ -29,7 +37,7 @@ function App() {
 
         <div>
           <h2>suas tarefas:</h2>
-          <TaksList taskList={taksList}/>
+          <TaksList taskList={taksList} handleDelete={deleteTask}/>
         </div>
 
       </main>

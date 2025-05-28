@@ -8,9 +8,10 @@ import styles from "./TaskList.module.css";
 
 type Props = {
   taskList: ITaks[];
+  handleDelete(id: number): void
 };
 
-const TaksList = ({taskList}: Props) => {
+const TaksList = ({taskList, handleDelete}: Props) => {
   return (
     <>
       {TaksList.length > 0 ? (
@@ -22,7 +23,10 @@ const TaksList = ({taskList}: Props) => {
             </div>
             <div className={styles.actions}>
               <i className='bi bi-pencil'></i>
-              <i className='bi bi-trash'></i>
+              <i 
+                className='bi bi-trash' 
+                onClick={() => {handleDelete(task.id)}}
+              ></i>
             </div>
           </div>
         ))
