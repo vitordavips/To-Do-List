@@ -20,7 +20,7 @@ const TaksList = ({taskList}: Props) => {
               <h4>{task.title}</h4>
               <p>Dificuldade: {task.difficulty}</p>
             </div>
-            <div>
+            <div className={styles.actions}>
               <i className='bi bi-pencil'></i>
               <i className='bi bi-trash'></i>
             </div>
