@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div>
-      <Modal />
+      <Modal children={<TaksForm btnText="Editar Tarefa" taskList={taksList}/>}/>
       <Header/>
       <main className={styles.main}>
         
