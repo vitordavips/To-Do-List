@@ -49,6 +49,7 @@ function App() {
           btnText="Editar Tarefa" 
           taskList={taksList}
           task={taskToUpdate}
+          handleUpdate={updateTask}
         />
       }/>
       <Header/>
