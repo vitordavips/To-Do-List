@@ -18,6 +18,7 @@ import type { ITaks } from "./interfaces/Taks";
 
 function App() {
   const [taksList, setTaksList] = useState< ITaks[]>([]);
+  const [taskToUpdate, setTaskToUpdate] = useState<ITaks | null>(null);
 
   const deleteTask = (id: number) => {
     setTaksList(
@@ -36,19 +37,30 @@ function App() {
     }
   };
 
-  const editTask = (): void => {
+  const editTask = (task: ITaks): void => {
     hideOrShowModal(true);
+    setTaskToUpdate(task);
   };
 
   return (
     <div>
-      <Modal children={<TaksForm btnText="Editar Tarefa" taskList={taksList}/>}/>
+      <Modal 
+        children={<TaksForm 
+          btnText="Editar Tarefa" 
+          taskList={taksList}
+          task={taskToUpdate}
+        />
+      }/>
       <Header/>
       <main className={styles.main}>
         
         <div>
           <h2>O que você vai fazer?</h2>
-          <TaksForm btnText='Criar Tarefa' taskList={taksList} setTaksList={setTaksList}/>
+          <TaksForm 
+            btnText='Criar Tarefa' 
+            taskList={taksList} 
+            setTaksList={setTaksList}
+          />
         </div>
 
         <div>

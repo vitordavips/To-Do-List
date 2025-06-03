@@ -11,12 +11,21 @@ interface Props {
     btnText: string;
     taskList: ITaks[];
     setTaksList?: React.Dispatch<React.SetStateAction<ITaks[]>>;
+    task?: ITaks | null;
 }
 
-const TaksForm = ({btnText, taskList, setTaksList}: Props) => {
+const TaksForm = ({btnText, taskList, setTaksList, task}: Props) => {
     const [id, setId] = useState<number>(0);
     const [title, setTitle] = useState<string>("");
     const [difficulty, setDifficulty] = useState<number>(0);
+
+    useEffect(() => {
+        if(task){
+            setId(task.id);
+            setTitle(task.title);
+            setDifficulty(task.difficulty);
+        }
+    }, [task]);
 
     const addTaskHandler = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault();
