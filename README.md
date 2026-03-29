@@ -1,9 +1,9 @@
-# To-Do List (Versão 2.0) 🚀
+# To-Do List (Versão 2.0)
 
-Um aplicativo de Lista de Tarefas moderno, refatorado com muito carinho para oferecer uma experiência "Premium" e interações mais orgânicas. 
+Um aplicativo de Lista de Tarefas desenvolvido para oferecer uma interface moderna e interações orgânicas. 
 
-## 🌟 Novidades da Versão 2.0
-- **UI/UX Premium:** Design moderno com foco em "Glassmorphism" escuro, micro-animações, e uma interface bem clean utilizando tipografia `Inter` (Google Fonts).
+## Melhorias Implementadas na Versão 2.0
+- **Atualização de UI/UX:** Design modernizado com modo escuro, micro-animações e interface limpa focada em usabilidade (utilizando tipografia `Inter` do Google Fonts).
 - **Persistência de Dados Local (`localStorage`):** Agora as tarefas não desaparecem ao recarregar a página! O seu navegador salvará suas tarefas ativas.
 - **Checkboxes de Concluído:** Opção para marcar as tarefas vencidas sem necessariamente apagá-las.
 - **Refatoração "Clean Code":**
@@ -11,13 +11,13 @@ Um aplicativo de Lista de Tarefas moderno, refatorado com muito carinho para ofe
   - Remoção de más-práticas do React antigo (como manipulação direta do DOM via `document.querySelector`). O Modal e seus estados agora usam states saudáveis (`useState`).
   - Função de edição (que estava incorreta na raiz do projeto) consertada e operante.
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - **React 19**
 - **TypeScript** (Tipagem rigorosa e fluída)
 - **Vite** (Build e Hot Module Replacement super rápidos)
 - **Vanilla CSS + CSS Modules** para estilização componentizada e isolada.
 
-## 💻 Como rodar o projeto localmente
+## Como rodar o projeto localmente
 Para iniciar a aplicação na sua máquina, siga os passos abaixo no terminal:
 
 1. **Clone do Repositório (se aplicável):**
@@ -38,5 +38,3 @@ npm run dev
 
 Abra o seu navegador a partir do link retornado no terminal *(provavelmente `http://localhost:5173/`)* para ver a aplicação rodando!
 
----
-> Projeto aprimorado por um Assistant AI "Antigravity". 🚀
