@@ -1,5 +1,11 @@
 # To-Do List (Versão 2.0)
 
+<div align="center">
+  <img src="public/tela1.png" alt="Formulário do To-Do List V2" width="800"/>
+  <br/>
+  <img src="public/tela2.png" alt="Lista de Tarefas do To-Do List V2" width="800"/>
+</div>
+
 Um aplicativo de Lista de Tarefas desenvolvido para oferecer uma interface moderna e interações orgânicas. 
 
 ## Melhorias Implementadas na Versão 2.0
