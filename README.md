@@ -1,10 +1,7 @@
 # To-Do List (Versão 2.0)
+<img width="1343" height="591" alt="Captura de tela 2026-03-29 184634" src="https://github.com/user-attachments/assets/4648ab51-150c-4ad5-a4bf-049c33443a55" />
+<img width="1341" height="590" alt="Captura de tela 2026-03-29 184712" src="https://github.com/user-attachments/assets/882ef232-7b60-4b38-9a82-1f3175340b58" />
 
-<div align="center">
-  <img src="public/tela1.png" alt="Formulário do To-Do List V2" width="800"/>
-  <br/>
-  <img src="public/tela2.png" alt="Lista de Tarefas do To-Do List V2" width="800"/>
-</div>
 
 Um aplicativo de Lista de Tarefas desenvolvido para oferecer uma interface moderna e interações orgânicas. 
 
