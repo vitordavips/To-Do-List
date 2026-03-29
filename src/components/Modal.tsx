@@ -1,28 +1,29 @@
-import React from 'react'
-
-// CSS
-import styles from "./Modal.module.css";
+import React from 'react';
+import styles from './Modal.module.css';
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-const Modal = ({children}: Props) => {
-
-  const closeModal = (e: React.MouseEvent): void => {
-    const modal = document.querySelector("#modal")
-    modal!.classList.add("hide")
-  };
+const Modal = ({ children, isOpen, onClose }: Props) => {
+  if (!isOpen) return null;
 
   return (
-    <div id='modal' className='hide'>
-      <div className={styles.fade} onClick={closeModal}></div>
-        <div className={styles.modal}>
-            <h2>Texto modal</h2>
-            {children}
+    <div className={styles.fade}>
+      <div className={styles.overlay} onClick={onClose} />
+      <div className={styles.modal}>
+        <div className={styles.header}>
+          <h2>Editar Tarefa</h2>
+          <button className={styles.closeBtn} onClick={onClose}>&times;</button>
         </div>
+        <div className={styles.content}>
+          {children}
+        </div>
+      </div>
     </div>
-  )
+  );
 };
 
 export default Modal;

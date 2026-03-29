@@ -1,6 +1,20 @@
-.header{
-    background-color: #282c34;
-    color: #61dafb;
-    text-align: center;
-    padding: 1em;
+.header {
+  background-color: var(--bg-color-secondary);
+  color: var(--text-primary);
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.header span {
+  color: var(--accent-color);
+  font-size: 1rem;
+  vertical-align: super;
 }
