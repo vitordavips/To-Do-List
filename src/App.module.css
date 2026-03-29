@@ -1,0 +1,52 @@
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 60vh;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.topSection h2 {
+  font-size: 1.75rem;
+  color: var(--accent-color);
+  margin-bottom: 0.25rem;
+}
+
+.topSection p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bottomSection h2 {
+  font-size: 1.75rem;
+  color: var(--accent-color);
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .main {
+    gap: 2rem;
+  }
+}
